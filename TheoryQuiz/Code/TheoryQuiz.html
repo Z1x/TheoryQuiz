@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="TheoryQuiz.css">
+</head>
+
+<body>
+    <button onclick="prevQuestion()">Previous</button>
+    <button id='next' onclick="nextQuestion()">Next</button>
+    <h1 id='question'>Something is Wrong</h1>
+    <div id='container'>
+        <ul>
+            <li onclick="if (questionNumber <= questions.length - 1)  {questions[questionNumber].answer('1')} else {end('1')}"><img src="../img/1.png" alt="1"><p id='answer1'></p></li>
+            <li onclick="if (questionNumber <= questions.length - 1)  {questions[questionNumber].answer('2')} else {end('2')}"><img src="../img/2.png" alt="2"><p id='answer2'></p></li>
+            <li onclick="if (questionNumber <= questions.length - 1)  {questions[questionNumber].answer('3')} else {end('3')}"><img src="../img/3.png" alt="3"><p id='answer3'></p></li>
+        </ul>
+    </div>
+
+
+    <div id='list'>
+
+    </div>
+
+    <script src="TheoryQuiz.js"></script>
+</body>
+
+</html>
